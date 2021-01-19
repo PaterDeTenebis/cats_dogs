@@ -116,5 +116,15 @@ section.main {
                 }
             }
         }
+        .post_single {
+            flex-direction: column;
+            .single_top {
+                margin-bottom: 50px;
+            }
+            .single_imgs {
+                max-width: 500px;
+                max-height: 500px;
+            }
+        }
     }
 }

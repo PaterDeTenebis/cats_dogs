@@ -162,4 +162,20 @@ section.main .main_content .post .post_bot .post_bot_btnholder button {
 section.main .main_content .post .post_bot .post_bot_btnholder button:hover {
   color: #fff;
 }
+
+section.main .main_content .post_single {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.main .main_content .post_single .single_top {
+  margin-bottom: 50px;
+}
+
+section.main .main_content .post_single .single_imgs {
+  max-width: 500px;
+  max-height: 500px;
+}
 /*# sourceMappingURL=main.css.map */
