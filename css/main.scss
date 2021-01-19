@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 section.header{
@@ -20,6 +21,11 @@ section.header{
 
 section.main {
     display: flex;
+    .reg_card {
+        margin: 0 auto;
+        margin-top: 120px;
+        width: 60%;
+    }
     .sidebar {
         height: 100%; /* Full-height: remove this if you want "auto" height */
         margin-top: 78px;
@@ -128,3 +134,24 @@ section.main {
         }
     }
 }
+.cabinet_card {
+    margin-top: 3px;
+}
+.card_cab {
+    display: flex;
+    
+    .cab_avatar {
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+    }
+    .cab_desc {
+        margin-left: 20px;
+    }
+    .cab_ads_item {
+        margin-top: 10px;
+    }
+}
+
