@@ -17,6 +17,10 @@ section.header{
         height: 50px;
         width: 60px;
     }
+    .btn_reg {
+        background: $Orange;
+        color: $MainBG;
+    }
 }
 
 section.main {
@@ -39,6 +43,10 @@ section.main {
         padding-top: 20px;
         padding-left: 30px;
         padding-right: 15px;
+        transition: .3s;
+        button.sb_close {
+            @include Toggler();
+        }
         a {
             text-decoration: none;
             font-size: 16px;
@@ -62,6 +70,12 @@ section.main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        button.sidebar_toggler {
+            @include Toggler();
+            margin-top: 5px;
+            position: fixed;
+            margin-left: -25px;
+        }
         .post {
             display: flex;
             justify-content: space-between;
@@ -111,7 +125,7 @@ section.main {
                 .post_bot_btnholder {
                     margin-top: 20px;
                     button {
-                        color: rgb(175, 175, 175);
+                        color: $Orange;
                         font-size: 14px;
                         text-transform: uppercase;
                         font-weight: bold;
@@ -124,6 +138,7 @@ section.main {
         }
         .post_single {
             flex-direction: column;
+            margin-bottom: 20px;
             .single_top {
                 margin-bottom: 50px;
             }
@@ -155,3 +170,8 @@ section.main {
     }
 }
 
+.sidebar_active {
+    margin-left: 0px!important;
+}
+
+@import"./mediaqueries";
